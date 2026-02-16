@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../deps/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../deps/css/my_css.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../deps/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../deps/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../deps/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../deps/favicon/site.webmanifest">
+    {% block title %}
+    <title>product.name</title>
+    {% endblock %}
+            {% block content %}
+            <div class="row mt-1">
+                <div class="col-lg-2">
+                    <!-- Пустой блок на усмотрение -->
+                </div>
+                <div class="col-lg-10">
+                    <!-- Контент на странице -->
+                    <div class="container mt-5">
+                        <div class="card mb-4 custom-shadow">
+                            <div class="row">
+                                <!-- Миниатюры -->
+                                <div class="col-md-4">
+                                    {% if product.image %}
+                                    <img src={{product.image.url}}
+                                        class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal1"> 
+                                    {% else %}
+                                    <img src="{% static 'deps/images/Not_found_image.png' %}"
+                                        class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal1"> 
+                                    {% endif %}
+                                </div>
+                                <div class="col-md-4 ">
+                                    <p class="product_id mt-3">id: {{product.display_id}}</p>
+                                </div>
+                                <!-- Увеличить изображение в модальном окне -->
+                                <div class="modal fade" id="imageModal1" tabindex="-1"
+                                    aria-labelledby="imageModal1Label" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="imageModal1Label">Изображение 1</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Закрыть"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img src="../deps/images/goods/far_cry_3.jpg"
+                                                    class="img-fluid" alt="Изображение 1">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Описание товара -->
+                            <div class="card-body">
+                                {% if product.discount %}
+                                            <span class="badge bg-warning text-dark">Скидка {{ product.discount }} %</span>
+                                            <p class="card-subtitle"> <s> {{ product.price }} руб </s></p> 
+                                            <p class="card-subtitle"> <strong> {{ product.price_disc }} руб </strong></p> 
+                                    {% else %}
+                                            <p class="card-subtitle">{{ product.price }} руб</p> 
+                                    {% endif %}
+                                <h5 class="card-title">{{product.name}}</h5>
+                                <p class="card-text">{{product.description}}</p>
+                                <a href="{% url "cart:add" product.slug %}" class="btn btn-dark add-to-cart">Добавить в корзину</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endblock %}

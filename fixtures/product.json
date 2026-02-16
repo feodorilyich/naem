@@ -1,0 +1,170 @@
+[
+{
+  "model": "products.product",
+  "pk": 3,
+  "fields": {
+    "name": "Diablo 3",
+    "slug": "Diablo_3",
+    "price": "999.00",
+    "discount": 25,
+    "description": "Нужно победить владык преисподней",
+    "quantity": 0,
+    "category": 9,
+    "image": "product_images/diablo3.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 4,
+  "fields": {
+    "name": "Fahrenheit",
+    "slug": "Fahrenheit",
+    "price": "499.00",
+    "discount": 0,
+    "description": "Становится холодно на земле. Давай разбираться",
+    "quantity": 0,
+    "category": 9,
+    "image": "product_images/fahrenheit.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 5,
+  "fields": {
+    "name": "Fallout New Vegas",
+    "slug": "Fallout_New_Vegas",
+    "price": "499.00",
+    "discount": 10,
+    "description": "Казино на осколках мира",
+    "quantity": 0,
+    "category": 1,
+    "image": "product_images/fallout.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 6,
+  "fields": {
+    "name": "God of war",
+    "slug": "God_of_war",
+    "price": "1499.00",
+    "discount": 0,
+    "description": "Чем занимается убийца богов в Скандинавии",
+    "quantity": 0,
+    "category": 1,
+    "image": "product_images/gow.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 7,
+  "fields": {
+    "name": "Mafia 2",
+    "slug": "Mafia_2",
+    "price": "799.00",
+    "discount": 20,
+    "description": "Вписываемся в мафиозные разборки",
+    "quantity": 0,
+    "category": 1,
+    "image": "product_images/mafia2.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 8,
+  "fields": {
+    "name": "Max Payne 3",
+    "slug": "Max_Payne_3",
+    "price": "699.00",
+    "discount": 0,
+    "description": "Он стар, да удал",
+    "quantity": 0,
+    "category": 1,
+    "image": "product_images/maxpayne3.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 9,
+  "fields": {
+    "name": "Red dead redemption 2",
+    "slug": "red_dead_redemption_2",
+    "price": "1399.00",
+    "discount": 0,
+    "description": "Как оно там на диком западе",
+    "quantity": 0,
+    "category": 9,
+    "image": "product_images/rdr2.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 10,
+  "fields": {
+    "name": "Resident evil 2",
+    "slug": "resident_evil_2",
+    "price": "1099.00",
+    "discount": 0,
+    "description": "Побегаем от зомби",
+    "quantity": 0,
+    "category": 6,
+    "image": "product_images/RE2.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 11,
+  "fields": {
+    "name": "The last of us",
+    "slug": "the_last_of_us",
+    "price": "1699.00",
+    "discount": 0,
+    "description": "Через всю Америку в постапокалиптическом мире",
+    "quantity": 0,
+    "category": 6,
+    "image": "product_images/tlou.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 12,
+  "fields": {
+    "name": "Uncharted 3",
+    "slug": "uncharted_3",
+    "price": "899.00",
+    "discount": 15,
+    "description": "Современный Индиана Джонс",
+    "quantity": 0,
+    "category": 6,
+    "image": "product_images/uncharted3.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 13,
+  "fields": {
+    "name": "The witcher 3",
+    "slug": "the_witcher_3",
+    "price": "1199.00",
+    "discount": 0,
+    "description": "Геральд Геральд",
+    "quantity": 0,
+    "category": 9,
+    "image": "product_images/witcher3.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 14,
+  "fields": {
+    "name": "Far cry 3",
+    "slug": "far-cry-3",
+    "price": "1499.00",
+    "discount": 10,
+    "description": "ходим по острову.",
+    "quantity": 0,
+    "category": 9,
+    "image": "product_images/far_cry_3_3xTnMAU.jpg"
+  }
+}
+]
